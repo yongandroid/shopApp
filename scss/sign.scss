@@ -1,0 +1,73 @@
+@import "base";
+@import "functions";
+body {
+    @include boxOrient(vertical);
+}
+
+header {
+    @include boxVertiFlex(80);
+    @include content-center;
+    background: $title-bgcolor;
+    font-size: $title-fz;
+    color: $colorWhite;
+    position: relative;
+    a{
+        color: $colorWhite;
+    }
+    span {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &:before {
+            content: "\f060";
+        }
+    }
+}
+
+article {
+    @include boxVertiFlex(650);
+    @include boxOrient(vertical);
+    background: $login-content-bgcolor;
+}
+
+.form-wrap {
+    @include boxVertiFlex(380);
+}
+
+.form-group {
+    margin: 5%;
+    input {
+        @include setInput(3px);
+        width: 100%;
+        height: 2.8rem;
+        margin-bottom: 2rem;
+        text-indent: 2.5rem;
+        font-size: 0.8rem;
+        border-bottom: 1px solid $title-bgcolor;
+    }
+    .username {
+        background: url(../images/ico-user.png) no-repeat 0.5rem center;
+    }
+    .password {
+        background: url(../images/ico-password.png) no-repeat 0.5rem center;
+    }
+}
+
+.btn-wrap {
+    @include boxVertiFlex(450);
+    @include content-center;
+    padding: 0 5%;
+    span {
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        color: $colorWhite;
+        border-radius: 3px;
+        @include text-center(3rem);
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+        background: $login-logbtn-bgcolor;
+    }
+}

@@ -1,0 +1,99 @@
+@import "base";
+@import "functions";
+body {
+    @include boxOrient(vertical);
+}
+
+header {
+    @include boxVertiFlex(80); //原设计80
+    @include content-center;
+    background: $title-bgcolor;
+    font-size: $title-fz;
+    color: $colorWhite;
+}
+
+article {
+    @include boxVertiFlex(650);
+    @include boxOrient(vertical);
+    background: $login-content-bgcolor;
+}
+
+//输入框组
+.form-wrap {
+    @include boxVertiFlex(235);  
+}
+
+.form-group {
+    padding: 5%;
+    input {
+        @include setInput(3px);
+        width: 100%;
+        height: 2.8rem;
+        margin-bottom: 0.2rem;
+        text-indent: 2rem;
+        font-size: 0.8rem;
+        border-bottom: 1px solid $title-bgcolor;
+    }
+    .username{
+        background: url(../images/ico-user.png) no-repeat 0.5rem center;
+    }
+    .password{
+        background: url(../images/ico-password.png) no-repeat 0.5rem center;
+    }
+}
+
+//选项组
+.check-wrap {
+    @include boxVertiFlex(235);  //原设计182
+    .check-group {
+        padding: 5%;
+        .check-box {
+            width: 100%;
+            height: 3.1rem;
+            line-height: 3.1rem;
+            i{
+                width: 1rem;
+                height: 1rem;
+                border: 2px solid $title-bgcolor;
+                display: inline-block;
+                color: $title-bgcolor;
+                &:before{
+                    content: "\f00c";
+                }
+            }
+            span{
+                font-size: 0.8rem;
+            }
+            em{
+                margin-left: 8rem;
+                color: $title-bgcolor;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+//按钮组
+.btn-wrap {
+    @include boxVertiFlex(415);  //原设计415
+    .btn-group {
+        padding: 5%;
+        span {
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            color: $colorWhite;
+            border-radius: 3px;
+            @include text-center(3rem);
+            font-size: 1rem;
+            letter-spacing: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .login-btn {
+            background: $login-logbtn-bgcolor;
+        }
+        .reg-btn {
+            background: #56baed;
+        }
+    }
+}

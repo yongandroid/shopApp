@@ -1,0 +1,14 @@
+{
+    "path": {
+        "scss/*.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "mikaeljorhult.bracketsTodo.enabled": false
+        }
+    }
+}

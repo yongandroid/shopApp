@@ -1,0 +1,44 @@
+//设置元素为webkit-box，并且排列方向
+@mixin boxOrient($orient:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: $orient;
+}
+
+//设置水平排布的元素占的比例
+@mixin boxHoriFlex($flex) {
+    -webkit-box-flex: $flex;
+    width: 0;
+}
+
+//设置垂直排列的元素占的比例
+@mixin boxVertiFlex($flex) {
+    -webkit-box-flex: $flex;
+    height: 0;
+}
+
+//内容居中设置
+@mixin content-center {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+//文字居中设置
+@mixin text-center($height){
+    text-align: center;
+    height: $height;
+    line-height: $height;
+}
+
+//同时设置宽和高度
+@mixin set-wh($width:auto, $height:auto) {
+    width: $width;
+    height: $height;
+}
+
+//设置input框没有边框，没有outline，并且设置border-radius
+@mixin setInput($radius:0px) {
+    outline: none;
+    border: none {
+        radius: $radius;
+    }
+}
