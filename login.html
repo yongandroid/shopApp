@@ -15,21 +15,22 @@
 		<div class="form-wrap">
 			<!--           用户名组-->
 			<div class="form-group">
-				<input class="username" type="text" placeholder="请输入帐户">
-				<input class="password" type="password" placeholder="请输入密码">
+				<input class="username" type="text" placeholder="请输入帐户" maxlength="20">
+				<input class="password" type="password" placeholder="请输入密码" maxlength="20">
+				<span class="formTip">用户名或密码不能为空</span>
 			</div>
 		</div>
 		<!-- 选择框组 -->
 		<div class="check-wrap">
 			<div class="check-group">
 				<div class="check-box">
-					<i class="fa"></i>
-					<span>显示密码</span>
+					<i class="fa passToggler unchecked" id="tgPassCheckbox"></i>
+					<span class="passToggler">显示密码</span>
 					<em>忘记密码？</em>
 				</div>
 				<div class="check-box">
-					<i class="fa"></i>
-					<span>记住密码自动登录</span>
+					<i class="fa rememberToggler unchecked" id="rmbPassCheckbox"></i>
+					<span class="rememberToggler">记住密码自动登录</span>
 				</div>
 			</div>
 
@@ -43,5 +44,7 @@
 			</div>
 		</div>     
 	</article>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>

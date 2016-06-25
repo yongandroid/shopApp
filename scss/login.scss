@@ -20,16 +20,16 @@ article {
 
 //输入框组
 .form-wrap {
-    @include boxVertiFlex(235);  
+    @include boxVertiFlex(250);  
 }
 
 .form-group {
-    padding: 5%;
+    padding: 5% 5% 2%;
     input {
         @include setInput(3px);
         width: 100%;
         height: 2.8rem;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.3rem;
         text-indent: 2.5rem;
         font-size: 0.8rem;
         border-bottom: 1px solid $title-bgcolor;
@@ -39,6 +39,16 @@ article {
     }
     .password{
         background: url(../images/ico-password.png) no-repeat 0.5rem center;
+    }
+    span{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        visibility: hidden;
+        padding-left: 1rem;
+    }
+    .error {
+        color: rgb(242, 95, 17);
+        visibility: visible;
     }
 }
 
@@ -61,6 +71,9 @@ article {
                     content: "\f00c";
                 }
             }
+            .unchecked{
+                color: #FFFFFF;
+            }
             span{
                 font-size: 0.8rem;
             }
@@ -75,7 +88,7 @@ article {
 
 //按钮组
 .btn-wrap {
-    @include boxVertiFlex(415);  //原设计415
+    @include boxVertiFlex(350);  
     .btn-group {
         padding: 5%;
         span {

@@ -66,18 +66,18 @@ article {
   background: #FFFFFF; }
 
 .form-wrap {
-  -webkit-box-flex: 235;
+  -webkit-box-flex: 250;
   height: 0; }
 
 .form-group {
-  padding: 5%; }
+  padding: 5% 5% 2%; }
   .form-group input {
     outline: none;
     border: none;
       border-radius: 3px;
     width: 100%;
     height: 2.8rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
     text-indent: 2.5rem;
     font-size: 0.8rem;
     border-bottom: 1px solid #008ED6; }
@@ -85,6 +85,14 @@ article {
     background: url(../images/ico-user.png) no-repeat 0.5rem center; }
   .form-group .password {
     background: url(../images/ico-password.png) no-repeat 0.5rem center; }
+  .form-group span {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    visibility: hidden;
+    padding-left: 1rem; }
+  .form-group .error {
+    color: #f25f11;
+    visibility: visible; }
 
 .check-wrap {
   -webkit-box-flex: 235;
@@ -103,6 +111,8 @@ article {
         color: #008ED6; }
         .check-wrap .check-group .check-box i:before {
           content: "\f00c"; }
+      .check-wrap .check-group .check-box .unchecked {
+        color: #FFFFFF; }
       .check-wrap .check-group .check-box span {
         font-size: 0.8rem; }
       .check-wrap .check-group .check-box em {
@@ -111,7 +121,7 @@ article {
         font-size: 0.8rem; }
 
 .btn-wrap {
-  -webkit-box-flex: 415;
+  -webkit-box-flex: 350;
   height: 0; }
   .btn-wrap .btn-group {
     padding: 5%; }
