@@ -54,7 +54,11 @@ function sendLoginInfo(_userId,_password){
         },
         dataType: 'JSON',
         success: function (data) {
-            console.log(JSON.parse(data));
+            if(data != '0' && data != '2'){
+                 console.log(JSON.parse(data));
+            }else{
+                console.log('登录失败');
+            }
         }
     })
 }
