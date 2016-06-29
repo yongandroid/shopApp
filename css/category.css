@@ -89,7 +89,18 @@ article {
         height: 6.5rem;
         float: left;
         margin: 0.8%;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        box-sizing: border-box;
+        padding: 0.5rem 0.8rem;
+        position: relative; }
+        article .nav-wrap ul li img {
+          width: 3rem;
+          position: absolute;
+          margin: auto;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0; }
       article .nav-wrap ul .w-50 {
         width: 48.2%; }
       article .nav-wrap ul .w-25 {
@@ -97,19 +108,19 @@ article {
       article .nav-wrap ul .w-75 {
         width: 73.2%; }
       article .nav-wrap ul .color-1 {
-        background: #0FC3DA; }
+        background: #FBB040; }
       article .nav-wrap ul .color-2 {
-        background: #92CF0F; }
+        background: #92278F; }
       article .nav-wrap ul .color-3 {
-        background: #F5BC25; }
+        background: #F15A29; }
       article .nav-wrap ul .color-4 {
-        background: #FF6678; }
+        background: #726658; }
       article .nav-wrap ul .color-5 {
-        background: #FF8B55; }
+        background: #EE2A7B; }
       article .nav-wrap ul .color-6 {
-        background: #368FF5; }
+        background: #F7941E; }
       article .nav-wrap ul .color-7 {
-        background: #777EE8; }
+        background: #2BB673; }
 
 footer {
   -webkit-box-flex: 40;

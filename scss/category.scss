@@ -42,6 +42,18 @@ article{
                 float: left;
                 margin: 0.8%;
                 color: #FFFFFF;
+                box-sizing: border-box;
+                padding:0.5rem 0.8rem;
+                position: relative;
+                img{
+                    width: 3rem;
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
             }
             .w-50{
                 width: 48.2%;
@@ -53,25 +65,25 @@ article{
                 width: 73.2%;
             }
             .color-1{
-                background: #0FC3DA;
+                background: #FBB040;
             }
             .color-2{
-                background: #92CF0F;
+                background: #92278F;
             }
             .color-3{
-                background: #F5BC25;
+                background: #F15A29;
             }
             .color-4{
-                background: #FF6678;
+                background: #726658;
             }
             .color-5{
-                background: #FF8B55;
+                background: #EE2A7B;
             }
             .color-6{
-                background: #368FF5;
+                background: #F7941E;
             }
             .color-7{
-                background: #777EE8;
+                background: #2BB673;
             }
         }
     }
