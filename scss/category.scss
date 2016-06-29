@@ -20,11 +20,60 @@ article{
         @include boxVertiFlex(100);
         width: 100%;
         background: #e63939;
+        overflow: hidden;
+        ul{
+            overflow: hidden;
+            li{
+                height: 7.9rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
     }
     .nav-wrap{
         @include boxVertiFlex(235);
         width: 100%;
-        background: #39e661;
+        overflow: auto;
+        ul{
+            overflow: hidden;
+            li{
+                height: 6.5rem;
+                float: left;
+                margin: 0.8%;
+                color: #FFFFFF;
+            }
+            .w-50{
+                width: 48.2%;
+            }
+            .w-25{
+                width: 23.5%;
+            }
+            .w-75{
+                width: 73.2%;
+            }
+            .color-1{
+                background: #0FC3DA;
+            }
+            .color-2{
+                background: #92CF0F;
+            }
+            .color-3{
+                background: #F5BC25;
+            }
+            .color-4{
+                background: #FF6678;
+            }
+            .color-5{
+                background: #FF8B55;
+            }
+            .color-6{
+                background: #368FF5;
+            }
+            .color-7{
+                background: #777EE8;
+            }
+        }
     }
 }
 
