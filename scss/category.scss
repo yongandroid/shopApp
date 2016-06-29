@@ -13,9 +13,19 @@ header {
     color: $colorWhite;
 }
 article{
-    @include boxVertiFlex(350); 
+    @include boxVertiFlex(350);
+    @include boxOrient(vertical);
     @include content-center;
-    background: #e63939;
+    .banner{
+        @include boxVertiFlex(100);
+        width: 100%;
+        background: #e63939;
+    }
+    .nav-wrap{
+        @include boxVertiFlex(235);
+        width: 100%;
+        background: #39e661;
+    }
 }
 
 

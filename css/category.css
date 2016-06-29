@@ -62,9 +62,20 @@ article {
   -webkit-box-flex: 350;
   height: 0;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
   -webkit-box-pack: center;
-  -webkit-box-align: center;
-  background: #e63939; }
+  -webkit-box-align: center; }
+  article .banner {
+    -webkit-box-flex: 100;
+    height: 0;
+    width: 100%;
+    background: #e63939; }
+  article .nav-wrap {
+    -webkit-box-flex: 235;
+    height: 0;
+    width: 100%;
+    background: #39e661; }
 
 footer {
   -webkit-box-flex: 40;
