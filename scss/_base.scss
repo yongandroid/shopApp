@@ -18,7 +18,7 @@ html,body{width: 100%;height: 100%;}
 
 .fa {
     display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome,"微软雅黑";
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -33,7 +33,7 @@ html,body{width: 100%;height: 100%;}
 $colorWhite:#FFFFFF;
 
 //局部颜色样式
-$title-bgcolor:#008ED6;
+$title-bgcolor:#15C6DA;  //#008ED6
 $login-content-bgcolor:#FFFFFF;
 $login-logbtn-bgcolor:#008ED6;
 

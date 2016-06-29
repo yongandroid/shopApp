@@ -38,7 +38,7 @@ html, body {
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome, "微软雅黑";
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -54,7 +54,7 @@ header {
   display: -webkit-box;
   -webkit-box-pack: center;
   -webkit-box-align: center;
-  background: #008ED6;
+  background: #15C6DA;
   font-size: 1.2rem;
   color: #FFFFFF; }
 
@@ -80,7 +80,7 @@ article {
     margin-bottom: 0.3rem;
     text-indent: 2.5rem;
     font-size: 0.8rem;
-    border-bottom: 1px solid #008ED6; }
+    border-bottom: 1px solid #15C6DA; }
   .form-group .username {
     background: url(../images/ico-user.png) no-repeat 0.5rem center; }
   .form-group .password {
@@ -106,9 +106,9 @@ article {
       .check-wrap .check-group .check-box i {
         width: 1rem;
         height: 1rem;
-        border: 2px solid #008ED6;
+        border: 2px solid #15C6DA;
         display: inline-block;
-        color: #008ED6; }
+        color: #15C6DA; }
         .check-wrap .check-group .check-box i:before {
           content: "\f00c"; }
       .check-wrap .check-group .check-box .unchecked {
@@ -117,7 +117,7 @@ article {
         font-size: 0.8rem; }
       .check-wrap .check-group .check-box em {
         margin-left: 8rem;
-        color: #008ED6;
+        color: #15C6DA;
         font-size: 0.8rem; }
 
 .btn-wrap {
