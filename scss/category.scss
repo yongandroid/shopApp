@@ -19,15 +19,32 @@ article{
     .banner{
         @include boxVertiFlex(100);
         width: 100%;
-        background: #e63939;
         overflow: hidden;
         ul{
+            width: 300%;
             overflow: hidden;
             li{
-                height: 7.9rem;
                 img{
                     width: 100%;
                 }
+                float: left;
+            }
+        }
+        .swiper-pagination{
+            margin: 0 auto;
+            transform: translateY(-2.5rem);
+            text-align: center;
+            height: 1rem;
+            span{
+               display: inline-block;
+                @include set-wh(0.4rem,0.4rem);
+                margin-right: 0.3rem;
+                border: 0.1rem solid #f1e6e6{
+                    radius:50%;
+                }
+            }
+            .swiper-pagination-bullet-active{
+                background: #f1e6e6;
             }
         }
     }
@@ -94,6 +111,7 @@ footer{
     @include boxVertiFlex(40); 
     @include content-center;
     background: #F4F4F4;
+    color: #92278F;
     ul{
         width: 100%;
         li{

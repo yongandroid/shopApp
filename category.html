@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=0">
     <title>商品列表页</title>
     <script type="text/javascript">
-		document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth/20 + 'px';
-	</script>
+        document.getElementsByTagName('html')[0].style.fontSize = document.documentElement.clientWidth / 20 + 'px';
+    </script>
     <link rel="stylesheet" href="css/category.css">
 </head>
+
 <body>
     <header>商城分类</header>
     <article>
-		<div class="banner">
-			<ul>
-				<li>
-					<img src="images/banner-01.jpg">
-				</li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-		<div class="nav-wrap">
-			<ul>
-				<li class="w-50 color-1"><span>外套</span><img src="images/jacket.png"></li>
-				<li class="w-25 color-2"><span>衬衫</span><img src="images/shirt.png"></li>
-				<li class="w-25 color-3"><span>T恤</span><img src="images/t-shirt.png"></li>
-				<li class="w-75 color-4"><span>裙子</span><img src="images/dress.png"></li>
-				<li class="w-25 color-5"><span>短裤</span><img src="images/jean.png"></li>
-				<li class="w-50 color-6"><span>打底裤</span><img src="images/dadiku.png"></li>
-				<li class="w-50 color-7"><span>凉鞋</span><img src="images/shooes.png"></li>
-			</ul>
-		</div>
+        <div class="banner">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="images/banner-01.jpg"></li>
+                <li class="swiper-slide"><img src="images/banner-02.jpg"></li>
+                <li class="swiper-slide"><img src="images/banner-03.jpg"></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="nav-wrap">
+            <ul>
+                <li class="w-50 color-1"><span>外套</span><img src="images/jacket.png"></li>
+                <li class="w-25 color-2"><span>衬衫</span><img src="images/shirt.png"></li>
+                <li class="w-25 color-3"><span>T恤</span><img src="images/t-shirt.png"></li>
+                <li class="w-75 color-4"><span>裙子</span><img src="images/dress.png"></li>
+                <li class="w-25 color-5"><span>短裤</span><img src="images/jean.png"></li>
+                <li class="w-50 color-6"><span>打底裤</span><img src="images/dadiku.png"></li>
+                <li class="w-50 color-7"><span>凉鞋</span><img src="images/shooes.png"></li>
+            </ul>
+        </div>
     </article>
     <footer>
-		<ul>
-			<li class="fa home">首页</li>
-			<li class="fa cate">分类</li>
-			<li class="fa cart">购物车</li>
-			<li class="fa user">用户</li>
-			<li class="fa more">更多</li>
-		</ul>
+        <ul>
+            <li class="fa home">首页</li>
+            <li class="fa cate">分类</li>
+            <li class="fa cart">购物车</li>
+            <li class="fa user">用户</li>
+            <li class="fa more">更多</li>
+        </ul>
     </footer>
-    
+
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.banner', {
+            autoplay: 5000, //可选选项，自动滑动
+            pagination : '.swiper-pagination',
+        })
+    </script>
 </body>
+
 </html>
