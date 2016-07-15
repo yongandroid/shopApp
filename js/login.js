@@ -55,7 +55,7 @@ function sendLoginInfo(_userId,_password){
         dataType: 'JSON',
         success: function (data) {
             if(data != '0' && data != '2'){
-                 console.log(JSON.parse(data));
+                 location.href="category.html";
             }else{
                 console.log('登录失败');
             }
